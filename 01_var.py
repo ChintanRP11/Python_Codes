@@ -47,12 +47,15 @@ b = 9.99
 c = 5 + 6j
 d = 6 + 7j
 e = '1001'
+
+# type() used to check variable's type
 print(type(a))
 print(type(b))
 print(type(c))
 print(a)
 print(b)
-print(int(e,2)) #=> From bin(2) to dec, we can also do hex(16) to dec using int(h,16) and for oct 8 also.
+# convert number with any base to decimal
+print(int(e,2)) #=> From bin(2) to dec, we can also do hex(16) to dec using int(h,16) and for oct 8 also. where base 2-36 and 0 (it takes base from string)
 print(d-c)
 
 
@@ -66,41 +69,45 @@ print(B)
 #Tuples
 tup1 = (2,4,4.6,'tests')
 print(tup1)
+# slicing tuple and store it into new variable
 viv = tup1[1:3]
 print(viv)
+# accessing tupe element
 print(tup1[3])
 # tup1[2] = 7 #it generates error becuase element of tuple cannot be changed.
 print((a,b,c, viv))
 
-#Mutable
+#Mutable Data Types
 #Lists
 Alst = [1,4,5,6.55,'testlist','list','test',[66,77,88],(33,44,55)]
-print(Alst)
+print(Alst) #prints whole list
+# accessing or changing list elements
 Alst[5] = 'list1'
 print(Alst)
 Alst[7][2] = 99
 print(Alst)
-#we cananot change value Alst[8][0-2] because Alst[8] is tuple. However We cn change whole tuple.
+#we cananot change value Alst[8][0-2] because Alst[8] is tuple. However We can change whole tuple to another whole new element.
 Alst[8] = 111
 print(Alst)
 
-#Dictionaries
+#Dictionaries (Key:Value) pairs
 dict1 = {'RollNo':11, 'Name':'ABC', 'Result':'Pass'}
-print(dict1)
+print(dict1) #prints whole dictionary
+print(dict1['Name']) #access specific value using its key
+dict1['Name'] = 'XYZ' # changing or adding new key: value pair
 print(dict1['Name'])
-dict1['Name'] = 'XYZ'
-print(dict1['Name'])
 
-contact = {'vivek':90909, 'Chintan':90800, 'Jay':78665, 'Neel':35562, 'Jeel':27763}
-print(contact['Jay'])
+contact = {'Alice':90909, 'Bob':90800, 'Charlie':78665, 'Jane':35562, 'Mike':27763}
+print(contact['Charlie'])
 
 
-#Sets
+#Sets - unordered list
 Aset = {1,3,4,2,6,6,7,8,9,9,9,0}
 Bset = {'A','C','B','B','E','D','E','E'}
 
 print(Aset)
 print(Bset)
+#print(Bset[4]) #it gives error because set is not subscriptable
 Aset.add(5)
 Aset.remove(6)
 print(Aset)

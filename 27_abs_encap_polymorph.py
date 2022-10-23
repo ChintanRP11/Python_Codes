@@ -8,6 +8,7 @@ exa : print() --> it is function where code of it is hidden we can not show its 
 Encapsulation :
 Encap. is used for hiding both data and code.
 for this method we can access data using setter and getter method in capsule.
+It does not allow anyone to access data directly.
 
 Polymorphism : multi behaviour(shapes)
 It is utilized when we have commonly named methods across classes and subclasses

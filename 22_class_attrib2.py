@@ -8,17 +8,21 @@ Three types :
 
 
 class demo():
+    # intialize method of class demo. it runs when class is created using object.
     def __init__(self):
         self.tst = ('I am Public')
         self._tst = ('I am Protected')
         self.__tst = ('I am Private')
 
+    # public method
     def test(self):
         print('This is public method.')
 
+    # protected method
     def _test(self):
         print('This is protected method.')
 
+    # private method
     def __test(self):
         print('This is private method.')
 

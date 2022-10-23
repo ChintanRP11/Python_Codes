@@ -36,7 +36,6 @@ function --> open(filename, accessmode)
 
 .read() --> to read file contents
 .write() --> to write and append in file
-
 '''
 
 #Open Function
@@ -58,7 +57,6 @@ newf.close()
 
 print(newf.mode)
 print(newf.name)
-
 
 new3 = open('fileops1.txt', 'r+')
 print(new3.read())

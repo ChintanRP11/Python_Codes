@@ -1,3 +1,6 @@
+'''
+Constructor and destructor of class
+'''
 class college():
     def __init__(self):             #--> Initialize method , object is intialized
         print('constructor for college()')
@@ -15,11 +18,16 @@ class clg():
     def __del__(self):
         print('destructor of clg()')
 
-if True:
-    obj = college()
-    obj.test()
-    # del obj             # --> deleting object
-    # obj.test()         #--> this will throw an error because object is destructed
-    obj = clg()         #--> prev. 'obj' will be destructed and new (this) will be constructed
 
+obj = college()
+obj.test()
+# del obj             # --> deleting object
+# obj.test()         #--> this will throw an error because object is destructed
+
+# obj with instance of college() is destructed because here we have assigned new class instance to obj. So, obj will be new constructor for class clg()
+obj = clg()
+obj2 = college()
 print('thsi jjk slfs')
+
+
+# at the end of the program all instances are destructed automatically

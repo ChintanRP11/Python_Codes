@@ -1,4 +1,9 @@
+'''Python provides the abc module to use the abstraction in the Python program.'''
 from abc import abstractmethod, ABC
+
+'''this is abstract class and we cannot instantiate directly. It can be done only by instantiating the child classes
+It contains both normal and abstract methods.
+'''
 class BMW(ABC):
     
     def __init__(self,make,model,year):
@@ -72,4 +77,6 @@ bmw.drive()
 bmw.display()
 
 bmw=FiveSeries(True,"BMW","328i","2018")
+
+# new = BMW()
    

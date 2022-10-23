@@ -4,7 +4,6 @@ It will cause:
 	abnormal termination of program
 	unfriendly information to the end user
 	improrper shutdown of the resources
-
 '''
 
 # #try except is use for hide error and print something in place of error
@@ -45,6 +44,7 @@ class HigherValue(Exception):
     pass
 class LowerValue(Exception):
     pass
+
 import random
 val = random.randrange(0,41)
 print(val)

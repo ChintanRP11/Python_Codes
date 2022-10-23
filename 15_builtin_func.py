@@ -57,13 +57,13 @@ print(bin(14))
 print('sum() : ')
 print(sum((1, 7, 2, 4, 6)))
 
-#enumerate()    -->it used to indexing iterables(lists, tuples, etc..), it returns list of tuples, each tuple consists index values and items
+#enumerate()    --> it used to indexing iterables(lists, tuples, etc..), it returns list of tuples, each tuple consists index values and items
 print('enumerate() : ')
 fruits = ['apple', 'banana', 'grapes', 'orange']
 fruitstpl = ('apple', 'banana', 'grapes', 'orange')
 enfrt = enumerate(fruits)
 enfrt2 = enumerate(fruits, 10)      #--> starting index as second parameter
 print(type(enfrt))
-print(enfrt)
-print(list(enfrt))
+print(enfrt)        # it is an object of enumerate
+print(list(enfrt))  # prints enum object as list of tuple(index and value).
 print(list(enfrt2))

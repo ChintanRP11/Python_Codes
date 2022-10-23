@@ -1,6 +1,6 @@
 import pickle
 
-f = open("student.dat", "rb")
+f = open("student1.dat", "rb")
 obj = pickle.load(f)    # It loads data of one student in obj from file(student.dat)
 obj2 = pickle.load(f)
 obj3 = pickle.load(f)

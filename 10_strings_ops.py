@@ -8,7 +8,6 @@ operators used for string formatting
 %e = exponential notation with lowercase 'e'
 %f = floating point number
 %g = shorter of %f and %e
-
 '''
 
 str1 = 'First'
@@ -44,4 +43,3 @@ print(str2.find('p', 12))
 #str.index() used when substring/character is in string otherwise use str.find()it returns -1 when substring/character is not in string
 
 print(str3+str3)
-

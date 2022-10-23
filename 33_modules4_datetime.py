@@ -2,8 +2,6 @@ import datetime
 
 print(datetime.MAXYEAR)
 print(datetime.MINYEAR)
-print(datetime.time)
-print(datetime.timezone)
 
 now = datetime.datetime.today()
 other = datetime.datetime(1999,7,5,00,11,34,456456)

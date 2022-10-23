@@ -5,7 +5,6 @@ def fun_name(params):
 
 return is used to stop execution of function code after return statement, insider function will not be executed
 return also give its value to function calling object
-
 '''
 
 # def person_data(name, age):

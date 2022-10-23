@@ -8,4 +8,4 @@ def sum(b):
     return b + c
 print(a)
 print(sum(a))
-print(c)
+print(c)        # gives error because is not in global scope

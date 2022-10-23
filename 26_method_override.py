@@ -1,6 +1,6 @@
 '''
 Method Overriding :
-In this both Parent and Child class Have same method, so when we call that method using child class's object then there will be child class's method will be called
+In this concept, if both Parent and Child class Have same method, so when we call that method using child class's object then there will be child class's method will be called because it overrides the previous method
 '''
 class vehicle:
     def v_type(self):

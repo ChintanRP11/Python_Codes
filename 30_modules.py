@@ -7,15 +7,12 @@ os :
 it used to work with operating system, it can run os commands
 '''
 import sys
-
 # sys.argv                  # command line argument
-print(sys.winver)           # it gives version number
 print(sys.flags)            # it shows status of command line flags
 print(sys.prefix)           # it returns path of python environment
 #print(sys.exit())          # tells python interpreter to quit
 
 import os
-
 print(os.name)
 print(os.environ)               # returns environment variables of system
 print(os.getlogin())            # user logon name
@@ -32,7 +29,6 @@ print(os.getppid())             # parent's process id
 #    print(i)
 
 import os.path
-
 print(os.path.abspath('test29_module_prop.py'))             # returns absolute path
 print(os.path.normpath('Tests\\test29_module_prop.py'))     # normal path name
 print(os.path.split('D:\python\py code\Tests\\test29_module_prop.py'))      # in o/p first part is dir. name and another is file name

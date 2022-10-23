@@ -6,7 +6,7 @@ anonymous functions are defined using 'lambda' keyword
 
 when we require nameless function for short period of time
 
-=>Map, Filter, Reduce using lambda
+=> Map, Filter, Reduce using lambda
 Map :
 it returns list of results after applying the given function each item of given iterable of list, tuples, etc.
 
@@ -61,5 +61,6 @@ red_lst1 = reduce(operator.add, lst1)
 print(red_lst)
 print(red_lst1)
 
+# finding max using reduce functionality
 max_lst = reduce((lambda x, y : x if x > y else y), lst1)
 print(max_lst)

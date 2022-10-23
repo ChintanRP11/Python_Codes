@@ -1,4 +1,5 @@
-# re module is used for check regular expressions in strings
+# re module is used for check regular expressions in strings. 
+# Used to Validate inputs
 
 # metacharacters
 #   []	    A set of characters	        "[a-m]"
@@ -50,7 +51,6 @@ emailadd =input("Enter email : ")
 vld = "(\w+)@(\w+)\.(com)"
 
 r2 = re.match(vld,emailadd)
-print(r2.group(1))
 
 if re.match(vld,emailadd):
     print('Valid')

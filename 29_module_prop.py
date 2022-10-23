@@ -3,7 +3,7 @@
 # print(dir())
 
 from math import sqrt       # it imports only specific object, methods, etc.. from module so that it saves memory space
-print(dir())                # it shows all methods, functions, variables in given module
+print(dir())                # it shows all methods, functions, variables available in this file
 
 
 

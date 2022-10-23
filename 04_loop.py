@@ -54,7 +54,6 @@ print()
 for g in range(5):
     if g > 1:
         pass
-        print("in pass....")
     else:
         print(g)
 

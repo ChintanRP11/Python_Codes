@@ -1,7 +1,7 @@
 '''
 -Taking inputs from user
 -input()
--takes multiple inputs through only one input() function using .split() function
+-extract multiple inputs through only one input() function using .split() function
 '''
 
 name = input('Enter Name : ')
