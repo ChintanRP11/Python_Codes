@@ -1,5 +1,6 @@
 import math
 
+# setting up extra bit as per requirements. k for integer part and m for float part.
 def bitsetter(binNum, k, m):
     if k == 0 and m == 0:
         return binNum
@@ -12,6 +13,7 @@ def bitsetter(binNum, k, m):
         fPart = fPart + '0'*(k-fl)
     return iPart+'.'+fPart
 
+# binary to decimal conversion
 def bin2dec(binNum):  
     iPart, fPart = binNum.split('.')
     iPart = int(iPart)
@@ -29,10 +31,12 @@ def bin2dec(binNum):
         mul /= 2
     return decimal+frac
 
+# Biased representation of Binary to decimal
 def biasbin2dec(binNum, bias):
     num = bin2dec(binNum)
     return num-bias
 
+# Decimal to binary conversion
 def dec2bin(num,k=0,m=0):
     res = ''
     dec = int(num // 1)
@@ -50,11 +54,12 @@ def dec2bin(num,k=0,m=0):
     res = bitsetter(res, k , m)
     return res
     
-    
+#Biased representation of Decimal to Binary
 def biasdec2bin(dec, bias, k=0, m=0):
     num = dec + bias
     return dec2bin(num,k,m)
 
+#Sign Magnitude representation of Decimal to Binary
 def signmagdec2bin(dec, k=0, m= 0):
     if dec < 0:
         bn = dec2bin(dec*-1, k-1, m)
@@ -64,7 +69,7 @@ def signmagdec2bin(dec, k=0, m= 0):
         res = '0' + bn
     return res
         
-    
+#2's Complement representation of Decimal to Binary
 def twoscompd2b(num,k=0,m=0):
     if num >= 0:
         return dec2bin(num,k,m)
@@ -74,6 +79,7 @@ def twoscompd2b(num,k=0,m=0):
         res = bin2dec(res) + ext
         return dec2bin(res)
 
+#1's Complement representation of Decimal to Binary
 def onescompd2b(num,k=0,m=0):
     if num >= 0:
         return dec2bin(num,k,m)
